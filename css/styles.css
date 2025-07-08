@@ -264,7 +264,7 @@ input {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 .social-list-item {
     width: 40px;
@@ -336,7 +336,6 @@ input {
 .bottom {
     background-color: #2e2f42;
     padding: 100px 0 100px;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
