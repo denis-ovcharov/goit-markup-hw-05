@@ -520,6 +520,7 @@ textarea {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .modal-window-text {
@@ -676,32 +677,37 @@ textarea {
 }
 
 .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     cursor: pointer;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    justify-self: flex-end;
-    margin: 24px 24px;
-    display: flex;
     align-items: center;
+    padding: 0;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-img {
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     justify-content: center;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
     background-color: #404bbf;
-    border-color: transparent;
+    border: none;
 }
 
-.modal-close:hover .close-img {
+.modal-close:hover .close-img,
+.modal-close:focus .close-img
+ {
     fill: #FFF;
 }
 
