@@ -487,6 +487,7 @@ textarea {
 /* MODAL OVERLAY */
 
 .modal-overlay {
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(46, 47, 66, 0.4);
     position: fixed;
     width: 100%;
@@ -496,8 +497,8 @@ textarea {
     display: flex;
     justify-content: center;
     z-index: 999;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
 
 }
 
@@ -507,12 +508,18 @@ textarea {
 }
 
 .modal-window {
-    margin-top: 80px;
-    background-color: #f4f4fd;
-    height: 584px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fcfcfc;
+    min-height: 584px;
     width: 408px;
     border-radius: 4px;
-    justify-content: center;
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window-text {
