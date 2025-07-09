@@ -192,8 +192,15 @@ input,textarea {
     display: flex;
     justify-content: center;
     z-index: 999;
+    opacity: 1;
+    pointer-events: auto;
 
 }
+.modal-overlay.is-open {
+opacity: 1;
+pointer-events: auto;
+}
+
 .modal-window {
     margin-top: 80px;
     background-color: #f4f4fd;
@@ -204,7 +211,6 @@ input,textarea {
     
 }
 .modal-window-text {
-    margin-top: 72px;
     margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -234,10 +240,19 @@ input,textarea {
 .form-input::placeholder {
     color: #616161;
 }
-.form-input:focus-within {
-    border-color: #4d5ae5;;
-}
 
+.form-input-comment:focus-within .comment::placeholder
+{
+    color: #404bbf;
+}
+.form-input:focus-within {
+    border-color: #4d5ae5;
+}
+.form-input-name:focus-within .name-img,
+.form-input-tel:focus-within .tel-img,
+.form-input-email:focus-within .email-img {
+    fill: #4d5ae5;
+}
 .form-label {
     display: flex;
     flex-direction: column;
@@ -297,7 +312,7 @@ input,textarea {
 .name-img {
     position: absolute;
     left: 19px;
-    top: 50%;
+    top: 55%;
 }
 .form-input-tel {
     position: relative;
@@ -305,7 +320,7 @@ input,textarea {
 .tel-img {
     position: absolute;
     left: 19px;
-    top: 50%;
+    top: 55%;
 }
 .form-input-email {
     position: relative;
@@ -313,7 +328,7 @@ input,textarea {
 .email-img {
     position: absolute;
     left: 19px;
-    top: 50%;
+    top: 55%;
 }
 .form-input-name,
 .form-input-tel,
@@ -326,7 +341,27 @@ input,textarea {
 .form-input-container {
     margin-bottom: 24px;
 }
-
+.modal-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-self:flex-end;
+    margin: 24px 24px;
+}
+.close-img {
+    fill: #2e2f42;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close:hover {
+    background-color: #404bbf;
+    border-color:transparent; 
+}
+.modal-close:hover  .close-img {
+    fill: #FFF;
+}
 /* BENEFITS */
 .visually-hidden {
     position: absolute;
