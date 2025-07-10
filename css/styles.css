@@ -569,10 +569,8 @@ textarea {
 }
 
 .form-label {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    text-align: start;
+    display: block;
+    margin-bottom:  4px;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
@@ -584,7 +582,10 @@ textarea {
     padding: 16px 32px;
     width: 169px;
     height: 56px;
+    display: flex;
     align-self: center;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: #4d5ae5;
     font-weight: 500;
@@ -661,19 +662,12 @@ textarea {
     left: 19px;
     top: 55%;
 }
-
-.form-input-name,
-.form-input-tel,
-.form-input-email {
-    margin-bottom: 8px;
-}
-
 .form-input-comment {
-    margin-bottom: 16px;
+    
 }
 
 .form-input-container {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-close {
@@ -683,11 +677,12 @@ textarea {
     cursor: pointer;
     width: 24px;
     height: 24px;
+    padding: 0;
     border-radius: 50%;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
     align-items: center;
-    padding: 0;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
