@@ -658,8 +658,10 @@ textarea {
 
 .tel-img {
     position: absolute;
-    left: 19px;
-    top: 55%;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-email {
@@ -668,11 +670,10 @@ textarea {
 
 .email-img {
     position: absolute;
-    left: 19px;
-    top: 55%;
-}
-.form-input-comment {
-    
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-container {
