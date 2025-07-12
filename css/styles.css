@@ -12,10 +12,11 @@ ul {
 
 a {
     text-decoration: none;
-    display: block;
-
+    
 }
-
+.head a {
+display: block;
+}
 .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -497,8 +498,8 @@ textarea {
     display: flex;
     justify-content: center;
     z-index: 999;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
 
 }
 
