@@ -619,10 +619,6 @@ textarea {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
 }
 .privacy-policy {
     line-height: 1.33333;
@@ -703,6 +699,9 @@ textarea {
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.check-text {
+    display: flex;
 }
 
 #user-privacy:checked~ .privacy-lable .custom-check {
