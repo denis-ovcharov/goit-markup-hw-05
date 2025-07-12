@@ -538,9 +538,7 @@ textarea {
     max-width: 360px;
     margin: 0 24px;
 }
-.name-container,
-.tel-container,
-.email-container {
+.input-container {
     margin-bottom: 8px;
 }
 .form-input {
