@@ -580,11 +580,6 @@ textarea {
         padding: 8px 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input-name:focus-within .name-img,
-.form-input-tel:focus-within .tel-img,
-.form-input-email:focus-within .email-img {
-    fill: #4d5ae5;
-}
 
 .form-label {
     display: block;
@@ -642,12 +637,15 @@ textarea {
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-
-.form-input-name {
-    position: relative;
+.input-wrapper:focus-within .input-img
+ {
+    fill: #4d5ae5;
 }
 
-.name-img {
+.input-wrapper {
+    position: relative;
+}
+.input-img {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -655,29 +653,6 @@ textarea {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-tel {
-    position: relative;
-}
-
-.tel-img {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input-email {
-    position: relative;
-}
-
-.email-img {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal-close {
     position: absolute;
     top: 24px;
