@@ -628,7 +628,7 @@ textarea {
     color: #8e8f99;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 .privacy-policy {
     line-height: 1.33333;
