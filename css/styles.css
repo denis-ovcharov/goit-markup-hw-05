@@ -569,7 +569,7 @@ textarea {
 }
 .form-input-comment {
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
         width: 100%;
@@ -729,7 +729,7 @@ textarea {
 
 }
 
-.standart-check:checked+.custom-check {
+#user-privacy:checked+ .privacy-lable .custom-check {
     background-color: #4d5ae5;
     border: none;
     fill:#f4f4fd;
